@@ -7,12 +7,15 @@
 body {
     font-family: 'Arvo', serif;
     font-weight: bold;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .card {
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
     position: relative;
     transform-style: preserve-3d;
     transition: transform .5s;
@@ -68,4 +71,10 @@ body {
     color: white;
     font-weight: bold;
     cursor: pointer;
+}
+
+#gameBoard {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    gap: 15px;
 }
